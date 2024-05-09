@@ -39,6 +39,7 @@ html {
     backdrop-filter: blur(4px);
     position: fixed;
     flex-direction: column;
+    z-index: 2;
 }
 
 .mainText {
@@ -50,7 +51,7 @@ html {
 .logo {
     width: 100%;
     height: auto;
-    margin-top: -50px;
+    margin-top: -25px;
 }
 
 .navbar-links {
@@ -147,22 +148,13 @@ li .navLinks:hover {
     text-align: center;
 } 
 
-.about-us-banner {
-    background-image: url("./assets/mainBG.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    padding-top: 200px;
-    padding-bottom: 125px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.containerText {
+    margin-top: 0px;
 }
 
 .a-container {
     width: 100%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
 }
 
 
@@ -170,9 +162,8 @@ li .navLinks:hover {
     color: #fff;
     font-size: 3.75rem;
     line-height: 1.2;
-    font-family: "Roboto", sans-serif;
+    font-family: "Merienda", cursive;
     font-weight: 500;
-    font-style: italic;
     padding: 0px 0px 10px 0px;
     margin: 0;
 }
@@ -181,34 +172,39 @@ li .navLinks:hover {
     color: #fff;
     font-size: 2.5rem;
     line-height: 1.2;
-    font-family: "Roboto", sans-serif;
+    font-family: "Merienda", cursive;
     font-weight: 500;
     margin: 0;
     padding: 0px 0px 25px 0px;
+}
+
+.page-title-two {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.75;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 35px 0px 0px 0px;
 }
 
 .onlineOrder {
     top: 60%;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     text-align: center; 
     z-index: 2; 
     cursor: pointer;
-    line-height: 1;
-    border-radius: 520px;
+    border-radius: 50px;
     transition-duration: .3s;
-    border: 1px solid transparent;
     letter-spacing: 2px;
-    width: 205px;
     text-transform: uppercase;
-    white-space: normal;
     text-align: center;
-    padding: 16px 14px 18px 16px;
-    box-shadow:  0 0 0 2px #616467;
+    padding: 16px 14px 14px 16px;
     background-color: white;
-    height: 50px;
     display: inline-block;
+    height: auto;
 }
 
 
@@ -229,8 +225,90 @@ li .navLinks:hover {
 
 .sectionTwo {
     width: 100%;
-    height: 750px;
+    height: auto;
     background-color: #171717;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.gridContainer {
+    height: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    align-items: center;
+    grid-column-gap: 75px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    padding-top: 0px;
+}
+
+.gridText {
+    height: auto;
+    text-align: justify;
+}
+
+.gtHeading {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    font-family: "Merienda", cursive;
+}
+
+.gtTextOne {
+    font-size: 1.3rem;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+.menu-button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition-duration: .3s;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px 14px 14px 16px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.menuBtn {
+    color: black;
+    text-decoration: none;
+}
+
+.menu-button:hover {
+    background-color: #d2691e;
+}
+
+.menuBtn:hover {
+    color: white;
+}
+
+.gridImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    filter: brightness(0.5);
+}
+
+.gridImg {
+    width: 100%;
+}
+
+.thirdContainer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color:#212121;
 }
 
 @media screen and (max-width: 1025px)  {
@@ -359,6 +437,7 @@ li .navLinks:hover {
         flex-direction: column;
         line-height: 2.5;
         align-items: center;
+        width: 100%;
     }
 
     .navbar-links.open {
@@ -403,11 +482,30 @@ li .navLinks:hover {
     }
 
    .page-title-one {
-    margin-left: 0px;
+        margin-left: 0px;
    }
+
+   .page-title-two {
+        font-size: 1.5rem;
+        margin-left:0px;
+    }
 
     .onlineOrder {
         top: 65%;
+    }
+
+    .sectionTwo {
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    .gridContainer {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+    .gridImage {
+        padding-bottom: 20px;
     }
 }
 
@@ -421,6 +519,14 @@ li .navLinks:hover {
         padding-top: 100px; 
         padding-bottom: 75px; 
     }
+
+    .navUL {
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5;
+        align-items: center;
+        width: 100%;
+    }
     
     .page-title {
         font-size: 2.5rem; 
@@ -428,6 +534,10 @@ li .navLinks:hover {
 
     .page-title-one {
         font-size: 2rem; 
+    }
+
+    .page-title-two {
+        font-size: 1.5rem;
     }
 
     .onlineOrder {
@@ -440,21 +550,29 @@ li .navLinks:hover {
 @media screen and (max-width:481px ) {
     .header {
         flex-direction: row;
-        height: 50px;
+        height: 100px;
     }
 
     .logo {
-        width: 200px;
+        width: 300px;
     }
 
     .navbar-toggle {
         right: 0px;
-        padding: 10px;
-        top: -2px;
+        padding: 20px;
+        top: 10px;
+    }
+
+    .navUL {
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5;
+        align-items: center;
+        width: 100%;
     }
 
     .navbar-links.open {
-        top: 90px;
+        top: 110px;
     }
 
     .a-container {
@@ -471,10 +589,66 @@ li .navLinks:hover {
         margin-left: 90px;
     }
 
+    .page-title-two {
+        font-size: 1rem;
+        margin-left:90px;
+    }
+
     .onlineOrder {
         margin-left: 90px;
     }
+
+    .gtTextOne {
+        font-size: 1rem;
+    }
 }
 
+@media screen and (max-width:375px ) {
+    .logo {
+        width: 250px;
+    }
 
-   
+    .navbar-toggle {
+        right: 0px;
+        padding: 20px;
+        top: 7px;
+    }
+
+    .navUL {
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5;
+        width: 100%;
+        align-items: center;
+    }
+
+    .gtTextOne {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width:320px ) {
+    .logo {
+        position: relative;
+        width: 245px;
+        left: -15px;
+    }
+
+    .navbar-toggle {
+        right: -18px;
+        padding: 20px;
+        top: 9px;
+    }
+
+    .navUL {
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5;
+        width: 100%;
+        align-items: center;
+    }
+
+    .gtTextOne {
+        font-size: 0.85rem;
+    }
+}
