@@ -1,8 +1,8 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merienda:wght@300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
-
+    -webkit-tap-highlight-color: transparent !important;
 }
 
 ::-webkit-scrollbar {
@@ -12,6 +12,10 @@
 html {
     scrollbar-width: none;
     -ms-overflow-style: none; 
+}
+
+button a {
+    -webkit-tap-highlight-color: transparent !important;
 }
 
 .container {
@@ -129,8 +133,6 @@ li .navLinks:hover {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-
-
 .about-us-banner {
     background-image: url("./assets/mainBG.png") ; 
     background-repeat: no-repeat;
@@ -156,7 +158,6 @@ li .navLinks:hover {
     width: 100%;
     margin-top: 50px;
 }
-
 
 .page-title {
     color: #fff;
@@ -257,9 +258,10 @@ li .navLinks:hover {
 }
 
 .gtTextOne {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
     line-height: 1.3;
     text-align: justify;
 }
@@ -307,9 +309,133 @@ li .navLinks:hover {
 
 .thirdContainer {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     background-color:#212121;
 }
+
+.gridContainerOne {
+    width: 90%;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    align-items: center;
+    grid-column-gap: 15px;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-columns: 1fr;
+    padding-top: 0px;
+}
+
+.gcoText {
+    height: auto;
+    text-align: justify;
+    font-family: "Lato", sans-serif;
+    color: white;
+}
+
+.gcoDesc {
+    margin-bottom: 200px;
+    line-height: 1;
+    text-align: justify;
+}
+
+.gcoHeading {
+    font-family: "lato", sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    line-height: 2;
+}
+
+.instadesc {
+    font-family: "lato", sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.gcoLinkWrap {
+    display: flex;
+    align-items: center;
+}
+
+.insta {
+    padding: 0px 20px 0px 0px;
+}
+
+.instaLink {
+    text-decoration: none;
+    font-size: 1.75rem;
+    color: white;
+}
+
+.gcoImg {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.rightPhoto {
+    display: flex;
+    flex-direction: column;
+    margin-left: -230px;
+    z-index: 1;
+    position: absolute;
+}
+
+.brownie {
+    width: 125px;
+    margin: 5px 0px -25px -125px;
+}
+
+.cake {
+    width: 120px;
+    margin: 5px 0px 0px -175px;
+}
+
+.cupcake {
+    width: 100px;
+    margin: -15px 0px 0px -110px;
+}
+
+.centerPhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+}
+
+.pizza {
+    width: 300px;
+    height: 300px;
+}
+
+.leftPhoto {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 95px;
+    z-index: 1;
+}
+
+.birthday {
+    width: 125px;
+    margin: 0px 125px 5px 0px;
+}
+
+.oreo {
+    width: 120px;
+    margin:-25px 0px 0px 75px;
+}
+
+.sandwich {
+    width: 100px;
+    margin: -10px 0px 15px 35px;
+}
+
 
 @media screen and (max-width: 1025px)  {
     .header {
@@ -405,6 +531,35 @@ li .navLinks:hover {
         margin-left: 0px;
     }
 
+    .thirdContainer {
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 75px;
+    }
+
+    .gridContainerOne {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .gcoDesc {
+        margin-bottom: 20px;
+    }
+
+    .rightPhoto {
+        display: none;
+    }
+
+    .centerPhoto {
+        position: relative;
+    }
+
+    .leftPhoto {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -601,6 +756,17 @@ li .navLinks:hover {
     .gtTextOne {
         font-size: 1rem;
     }
+
+    .gcoLinkWrap {
+        margin-bottom: 25px;
+    }
+
+    .thirdContainer {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
 }
 
 @media screen and (max-width:375px ) {
@@ -624,6 +790,25 @@ li .navLinks:hover {
 
     .gtTextOne {
         font-size: 0.85rem;
+    }
+
+    .gcoHeading {
+        font-size: 1.5rem;
+    }
+
+    .instaLink {
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: white;
+    }
+
+    .insta {
+        padding: 0px 5px 0px 0px;
+    }
+
+    .pizza {
+        width: 250px;
+        height: 250px;
     }
 }
 
@@ -651,4 +836,24 @@ li .navLinks:hover {
     .gtTextOne {
         font-size: 0.85rem;
     }
+
+    .gcoHeading {
+        font-size: 1.5rem;
+    }
+
+    .instaLink {
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: white;
+    }
+
+    .insta {
+        padding: 0px 5px 0px 0px;
+    }
+
+    .pizza {
+        width: 250px;
+        height: 250px;
+    }
 }
+
