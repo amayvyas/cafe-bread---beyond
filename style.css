@@ -300,7 +300,7 @@ li .navLinks:hover {
     align-items: center;
     width: 100%;
     height: auto;
-    filter: brightness(0.5);
+    filter: brightness(0.8);
 }
 
 .gridImg {
@@ -583,13 +583,36 @@ li .navLinks:hover {
     font-family: "Playfair Display", serif;
 }
 
-/* CONTACT PAGE  */
+/* AboutPage  */
 
 
+.aboutImageContainer {
+    background-image:  url("./assets/aboutBg.png");
+    background-position: 0 0, 100% 100%;
+    background-repeat: repeat, repeat;
+    background-size: auto, cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #171717;
+    padding-top: 400px;
+    padding-bottom: 200px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+} 
 
-
-
-
+.ImgContainer {
+    max-width: 90%;
+    padding-left: 100px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
 
 
 
