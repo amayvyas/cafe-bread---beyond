@@ -545,10 +545,10 @@ li .navLinks:hover {
 }
 
 .fgfText {
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.2;
     color: white;
-    font-family: "Playfair Display", serif;
+    font-family: 'josefin-sans', sans-serif;
     text-align: justify;
     margin-top: 10px;
 }
@@ -869,7 +869,8 @@ li .navLinks:hover {
 
     .fgfText {
         margin-top: 20px;
-        width: 235px;
+        width: 300px;
+        text-align: center;
     }
 }
 
@@ -993,7 +994,7 @@ li .navLinks:hover {
     .footerGridFour {
         display: block;
         margin-top: -85px;
-        margin-left: -110px;
+        margin-left: -50px;
     }
 }
 
@@ -1045,11 +1046,19 @@ li .navLinks:hover {
     }
      
     .footerGridTwo {
-        margin-left: -180px;
+        margin-left: -90px;
     }
 
     .footerGridFour {
-        margin-left: -90px;
+        margin-left: 0px;
+    }
+
+    iframe {
+        width: 250px;
+    }
+
+    .fgfText {
+        width: 250px;
     }
 }
 
