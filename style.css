@@ -43,7 +43,7 @@ button a {
     backdrop-filter: blur(4px);
     position: fixed;
     flex-direction: column;
-    z-index: 2;
+    z-index: 4;
 }
 
 .mainText {
@@ -436,13 +436,152 @@ li .navLinks:hover {
     margin: -10px 0px 15px 35px;
 }
 
+.footerClass {
+    width: 100%;
+    background-color: #171717;
+    height: auto;
+}
 
+.footerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    width: 80%;
+    background-color: #171717;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    grid-column-gap: 15px;
+    grid-auto-columns: 1fr;
+    padding-top: 50px;
+    height: auto;
+    padding-bottom: 30px;
+}
 
+.footerGridOne {
+    background-color:transparent;
+    height: auto;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: px;
+}
 
+.fgoLogo {
+    width: 100%;
+    height: 120px;
+}
 
+.zomato {
+    width: 120px;
+    height: 120px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
 
+.zomatoText {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+}
 
+.footerGridTwo {
+    background-color: transparent;
+    height: auto;
+    color: white;
+    text-align: justify;
+    margin-bottom: 60px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.footerLink {
+    text-align: justify;
+    align-items: flex-start;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-left: -60px;
+}
+
+.flItem {
+    list-style: none;
+    line-height: 2.2;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px dotted white;
+    font-size: 1.2rem;
+    font-family: "Playfair Display", serif;
+}
+
+.links:hover {
+    color: #d4af37;
+}
+
+.footerGridFour {
+    height: auto;
+    background-color: transparent;
+    margin-bottom:0px;
+}
+
+.footerHeading {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 75px;
+    margin-bottom: 30px;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+}
+
+.fgfText {
+    font-size: 1rem;
+    line-height: 1.2;
+    color: white;
+    font-family: "Playfair Display", serif;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.copyright-block {
+    border-top: 1px solid white;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+  
+.copyright-container {
+    width: 100%;
+}
+  
+.copyright-wrap {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+  
+.copyright-text {
+    color:white;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 0;
+    font-family: "Playfair Display", serif;
+}
 
 /* CONTACT PAGE  */
 
@@ -699,6 +838,39 @@ li .navLinks:hover {
     .gridImage {
         padding-bottom: 20px;
     }
+
+    .footerGrid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerGridOne {
+        margin-top: 0px;
+    }
+
+    .fgoLogo {
+        width: auto;
+        height: auto;
+    }
+
+    .zomato {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .footerGridFour {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -60px;
+    }
+
+    .fgfText {
+        margin-top: 20px;
+        width: 235px;
+    }
 }
 
 
@@ -737,6 +909,15 @@ li .navLinks:hover {
         font-size: 1rem;
     }
 
+    .footerGrid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fgoLogo {
+        width: 400px;
+        height: auto;
+    }
 }
 
 @media screen and (max-width:481px ) {
@@ -804,6 +985,16 @@ li .navLinks:hover {
         padding-top: 20px;
         padding-bottom: 50px;
     }
+
+    .footerGridTwo {
+        margin-left: -190px;
+    }
+
+    .footerGridFour {
+        display: block;
+        margin-top: -85px;
+        margin-left: -110px;
+    }
 }
 
 @media screen and (max-width:375px ) {
@@ -846,6 +1037,19 @@ li .navLinks:hover {
     .pizza {
         width: 250px;
         height: 250px;
+    }
+
+    .fgoLogo {
+        width: 290px;
+        height: auto;
+    }
+     
+    .footerGridTwo {
+        margin-left: -180px;
+    }
+
+    .footerGridFour {
+        margin-left: -90px;
     }
 }
 
@@ -891,6 +1095,14 @@ li .navLinks:hover {
     .pizza {
         width: 250px;
         height: 250px;
+    }
+
+    .footerGridTwo {
+        margin-left: -100px;
+    }
+
+    .footerGridFour {
+        margin-left: -10px;
     }
 }
 
