@@ -664,11 +664,46 @@ li .navLinks:hover {
     background-color:transparent;
     height: auto;
     color: white;
-    font-family: "Playfair Display", serif;
-    font-weight: 300;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
     font-size: 1.25rem;
-    line-height: 1.25;
+    line-height: 1.35;
     text-align: justify;
+}
+
+.timelineContainer {
+    width: 100%;
+    height: auto;
+    background-color: #171717;
+}
+
+.timeline {
+    position: relative;
+    max-width: 750px;
+    margin: 0px auto;
+    padding: 0px 0px 50px 0px;
+    background-color: #171717;
+}
+
+.timeline-item {
+    margin-bottom: 50px;
+}
+
+.timeline-content {
+    background: #171717;
+    color: white;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 10.5px 10.5px 20px rgba(255, 255, 255, 0.1);
+}
+
+.timeline-content h2 {
+    margin-top: 0;
+}
+
+.timeline-content p {
+    margin-bottom: 0;
 }
 
 
@@ -683,7 +718,27 @@ li .navLinks:hover {
 
 
 
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 @media screen and (max-width: 1025px)  {
     .header {
@@ -1016,6 +1071,22 @@ li .navLinks:hover {
         width: 90%;
         padding: 80px 0px 0px 20px;
         font-size: 2.25rem;
+    }
+
+    .adcgcText {
+        text-align: center;
+    }
+
+    .timeline {
+        max-width: 90%;
+    }
+
+    .timeline-content.js--fadeInLeft {
+        animation-name: fadeInRight;
+    }
+
+    .timeline-content.js--fadeInRight {
+        animation-name: fadeInLeft;
     }
 }
 
