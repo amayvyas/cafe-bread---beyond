@@ -478,7 +478,7 @@ li .navLinks:hover {
 .zomato {
     width: 120px;
     height: 120px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 20px;
 }
 
@@ -532,7 +532,7 @@ li .navLinks:hover {
 .footerGridFour {
     height: auto;
     background-color: transparent;
-    margin-bottom:0px;
+    margin-bottom:5px;
 }
 
 .footerHeading {
@@ -587,40 +587,89 @@ li .navLinks:hover {
 
 
 .aboutImageContainer {
-    background-image:  url("./assets/aboutBg.png");
-    background-position: 0 0, 100% 100%;
-    background-repeat: repeat, repeat;
-    background-size: auto, cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     background-color: #171717;
-    padding-top: 400px;
-    padding-bottom: 200px;
-    position: relative;
-    align-items: center;
+    padding: 10px 0px 10px 0px;
+    background-image: url("assets/bg.png");
     display: flex;
     justify-content: center;
-    vertical-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 } 
 
 .ImgContainer {
-    max-width: 90%;
-    padding-left: 100px;
-    padding-right: 20px;
+    width:100%;
+    height: 575px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutTitle {
+    position: absolute;
+    color: white;
+    font-family: "Merienda", cursive;
+    text-transform: uppercase;
+    font-size: 3rem;
+    width: 80%;
+    padding: 325px 175px 0px 0px;
+}
+
+.aboutDescriptionContainer {
+    width: 100%;
+    height: auto;
+    background-color: #171717;
+    margin-top: -2px;
+    padding:125px 0px ;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.adcGridContainer {
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: transparent;
     margin-left: auto;
     margin-right: auto;
+    grid-column-gap:25px ;
+    grid-auto-columns: 1fr;
 }
- 
 
+.adcgcImage{
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
 
+.adcgcImg {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    border-radius:10px;
+    -webkit-box-shadow: 1px 1px 20px 0px rgba(255,255,255,0.75);
+    -moz-box-shadow: 1px 1px 20px 0px rgba(255,255,255,0.75);
+    box-shadow: 1px 1px 20px 0px rgba(255,255,255,0.75);
+}
 
-
-
-
-
-
+.adcgcText {
+    width: 100%;
+    background-color:transparent;
+    height: auto;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    text-align: justify;
+}
 
 
 
@@ -759,6 +808,12 @@ li .navLinks:hover {
     .leftPhoto {
         display: none;
     }
+
+    .aboutTitle {
+        font-size: 2.85rem;
+        width: 80%;
+        padding: 275px 160px 0px 0px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -895,6 +950,20 @@ li .navLinks:hover {
         width: 300px;
         text-align: center;
     }
+
+    .aboutTitle {
+        font-size: 2.5rem;
+    }
+
+    .adcGridContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adcgcText {
+        line-height: 1;
+        margin-top: 30px;
+    }
 }
 
 
@@ -941,6 +1010,12 @@ li .navLinks:hover {
     .fgoLogo {
         width: 400px;
         height: auto;
+    }
+
+    .aboutTitle {
+        width: 90%;
+        padding: 80px 0px 0px 20px;
+        font-size: 2.25rem;
     }
 }
 
@@ -1003,6 +1078,10 @@ li .navLinks:hover {
         margin-bottom: 25px;
     }
 
+    .gridImg {
+        height: 370px;
+    }
+
     .thirdContainer {
         width: 100%;
         height: auto;
@@ -1018,6 +1097,16 @@ li .navLinks:hover {
         display: block;
         margin-top: -85px;
         margin-left: -50px;
+    }
+
+    .aboutTitle {
+        width: 90%;
+        padding: 80px 0px 0px 0px;
+        font-size: 2rem;
+    }
+
+    .aboutDescriptionContainer {
+        padding: 50px 0px;
     }
 }
 
@@ -1114,6 +1203,10 @@ li .navLinks:hover {
         font-size: 1.5rem;
     }
 
+    .gridImg {
+        height: 310px;
+    }
+
     .instaLink {
         text-decoration: none;
         font-size: 1.3rem;
@@ -1122,6 +1215,10 @@ li .navLinks:hover {
 
     .insta {
         padding: 0px 5px 0px 0px;
+    }
+
+    .instadesc {
+        font-size: 0.85rem;
     }
 
     .pizza {
