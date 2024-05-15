@@ -40,7 +40,7 @@ $(function(){
           origin: 'right',
           distance: '300px',
           easing: 'ease-in-out',
-          duration: 800,
+          duration: 200,
         });
   
     } else {

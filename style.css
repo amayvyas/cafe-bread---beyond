@@ -679,10 +679,18 @@ li .navLinks:hover {
 
 .timeline {
     position: relative;
-    max-width: 750px;
+    max-width: 700px;
     margin: 0px auto;
     padding: 0px 0px 50px 0px;
     background-color: #171717;
+}
+
+.tiLeft {
+    margin-left: -250px;
+}
+
+.tiRight {
+    margin-right: -250px;
 }
 
 .timeline-item {
@@ -700,10 +708,17 @@ li .navLinks:hover {
 
 .timeline-content h2 {
     margin-top: 0;
+    margin-bottom: 15px;
+    font-family: "Merienda", cursive;
 }
 
 .timeline-content p {
     margin-bottom: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.35;
+    text-align: center;
 }
 
 
@@ -1079,6 +1094,14 @@ li .navLinks:hover {
 
     .timeline {
         max-width: 90%;
+    }
+
+    .tiLeft {
+        margin-left: 0px;
+    }
+
+    .tiRight {
+        margin-right: 0px;
     }
 
     .timeline-content.js--fadeInLeft {
