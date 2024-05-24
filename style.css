@@ -754,6 +754,7 @@ li .navLinks:hover {
     background-color: #212121;
     cursor: pointer;
     user-select: none;
+    color: #d2691e;
 }
 
 .category ul {
