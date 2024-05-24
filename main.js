@@ -77,3 +77,37 @@ $(function(){
   
   
   });
+
+
+// menu /
+
+function toggleCategory(categoryId) {
+  var category = document.getElementById(categoryId);
+  var items = category.querySelector('.items');
+  if (items.style.display === 'block') {
+      items.style.display = 'none';
+  } else {
+      items.style.display = 'block';
+  }
+}
+
+
+function toggleCategory(categoryId) {
+  var category = document.getElementById(categoryId);
+  var subcategories = category.querySelector('.subcategories');
+  if (subcategories.style.display === 'block') {
+      subcategories.style.display = 'none';
+  } else {
+      subcategories.style.display = 'block';
+  }
+}
+
+function toggleSubcategory(subcategoryId) {
+  var subcategory = document.getElementById(subcategoryId);
+  var items = subcategory.querySelector('.items');
+  if (items.style.display === 'block') {
+      items.style.display = 'none';
+  } else {
+      items.style.display = 'block';
+  }
+}
